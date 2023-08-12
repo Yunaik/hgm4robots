@@ -1,0 +1,24 @@
+{
+    "env_name": "CartPole-v1",
+    "policy_name": "DqnPolicy",
+    "policy_params": {
+        "batch_size": 32,
+        "layer_sizes": [
+            32,
+            32
+        ],
+        "double_q": true,
+        "dueling": true,
+        "model_type": "dense",
+        "step_size": 1
+    },
+    "train_params": {
+        "lr": 0.001,
+        "epsilon": 1.0,
+        "epsilon_final": 0.02,
+        "warmup_episodes": 450,
+        "log_every_episode": 10,
+        "n_episodes": 500,
+        "target_update_every_step": 10
+    }
+}

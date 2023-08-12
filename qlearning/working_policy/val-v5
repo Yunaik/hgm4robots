@@ -1,0 +1,26 @@
+{
+    "env_name": "Valkyrie-5",
+    "policy_name": "DqnWarmstartPolicy",
+    "policy_params": {
+        "batch_size": 128,
+        "layer_sizes": [
+            64,
+            64
+        ],
+        "double_q": true,
+        "dueling": false,
+        "model_type": "dense",
+        "step_size": 1
+    },
+    "train_params": {
+        "lr": 0.001,
+        "epsilon": 1.0,
+        "epsilon_final": 0.1,
+        "warmup_episodes": 1000,
+        "log_every_episode": 1,
+        "n_episodes": 1000,
+        "target_update_every_step": 100,
+        "update_per_sample": 1,
+        "episode_length": 20
+    }
+}

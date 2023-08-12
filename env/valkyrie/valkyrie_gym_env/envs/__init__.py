@@ -1,0 +1,2 @@
+from valkyrie_gym_env.envs.valkyrie import Valkyrie
+from valkyrie_gym_env.envs.valkyrie_whole_body import Valkyrie_whole_body
